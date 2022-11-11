@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Poppins:wght@800&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+*{margin: 0;padding: 0;}
+a{text-decoration: none; color: #fff;}
+li{list-style: none;}
+
+body{
+    width: 100%; height: 100vh;
+    background:url(img/bg-main.jpg) no-repeat center;
+    background-size: cover;
+    /* background-blend-mode: hue; */
+}
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+   
+}
+.container{
+    width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+#top{
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+}
+#top .login_nav{
+    position: relative;
+    }
+#top .login_nav ul{
+  
+}
+#top .login_nav ul li{
+    position: relative;
+    top: 10px; margin-right: 20px;
+    float: right;
+}
+#top .login_nav ul li a{
+    color: #222;
+    font-weight: bold;
+    
+}
+#top .login_nav ul li a::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background-color: #222;
+    top: 6px;
+    left: -10px;
+}
+
+header .container .logo{width: 150px;}
+header .container .logo img{width: 100%;}
+
+
+header .container .nav_wrap{}
+header .container .nav_wrap ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+header .container .nav_wrap ul li{}
+
+header .container .nav_wrap ul li a{
+    font-size: 20px;
+    margin-right: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    
+}
+header .container .nav_wrap ul li a:hover{
+    color: #222;
+}
+header .container .search{
+    width: 200px;
+    background-color: #ddd;
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-right: 100px;
+}
+header .container .search i{
+    margin-left: 20px;
+    color: #999;
+    font-size: 20px;
+}
+header .container .search:hover{
+    background: #bbb;
+}
+header .container .search span{
+    color: #999;
+    font-size: 18px;
+    margin-left: 15px;
+}
+header .container .ico{
+    position: absolute;
+    right: 0%;
+    font-size: 25px;
+    float: left;
+    margin-right: 20px;
+}
+header .container .ico i{
+    padding-right: 2px;
+}
+
+
+
+/* main contents */
+
+.main{
+  
+}
+.main .slider .slick-slide{
+    display: flex;
+    overflow: hidden;
+    height: 1200px;
+}
+
+/* leftarea */
+
+.main .leftarea{
+    /* float: left; */
+    width:50%;
+    position:relative;
+}
+.main .leftarea .main_img{
+    width: 130%;
+    padding-top: 150px;
+}
+.main .leftarea .main_img img{width: 100%;}
+.main .slider .slick-active .main_img{
+    animation: fadeInL 0.3s 0.6s both;
+}
+
+.main .leftarea .main_txt{
+    color:rgba(255,255,255,0.4);
+    z-index: 1;
+    right: 1%;
+    top: 20%;
+    position: absolute;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main .leftarea .main_txt h2{
+    font-size: 78px;
+}
+.main .leftarea .main_txt p{
+    font-size: 30px;
+    letter-spacing: 30px;
+}
+.main .slider .slick-active .main_txt{
+    animation: fadeInR 0.3s 0.9s both;
+}
+
+/* rightarea */
+.main .rightarea{
+    width:50%;
+    position:relative;
+}
+.main .rightarea .shoetit{
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+.main .rightarea .shoetit h2{
+    font-style:italic;
+    font-weight: bold;
+    font-size: 50px;
+}
+.main .rightarea .shoetit p{
+    font-weight: bold;
+    font-size: 20px
+}
+.main .slider .slick-active .shoetit{
+    animation: fadeInR 0.3s 1.0s both;
+}
+
+.main .rightarea .expln{
+    color: #fff;
+    position: absolute;
+    top: 32%;
+    left: 20%;
+}
+.main .rightarea .expln ul{}
+.main .rightarea .expln ul li{}
+.main .rightarea .expln ul li a{
+    line-height: 3;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main .slider .slick-active .expln{
+    animation: fadeInL 0.3s 1.2s both;
+}
+
+/* rightarea bottom_btn */
+.main .rightarea .bottom_btn{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .rightarea .bottom_btn .Addcart{
+    margin-right: 20px;
+    background-color:  black;
+    border-radius: 30px;
+    padding: 13px;
+    width: 150px;
+    font-size: 20px;
+}
+.main .rightarea .bottom_btn .Addcart:hover{
+    background-color: #aaa;
+}
+.main .rightarea .bottom_btn .Addcart a{
+    margin-left: 20px;
+}
+.main .rightarea .bottom_btn .Addcart i{
+    color: #fff;
+}
+.main .slider .slick-active .Addcart{
+    animation: fadeInR 0.3s 1.2s both;
+}
+
+.main .rightarea .bottom_btn .wishlist{
+    margin-right: 20px;
+    border: 1px solid #222;
+    border-radius: 30px;
+    padding: 13px;
+    width: 150px;
+    font-size: 20px;
+    color: #222;
+}
+.main .rightarea .bottom_btn .wishlist:hover{
+background-color: #aaa;
+border: 1px solid #aaa;
+}
+.main .rightarea .bottom_btn .wishlist a{
+    margin-left: 20px;
+    color: #222;
+    font-weight: bold;
+}
+.main .rightarea .bottom_btn .wishlist i{
+}
+.main .slider .slick-active .wishlist{
+    animation: fadeInB 0.3s 1.2s both;
+}
+
+.main .rightarea .bottom_btn .price{
+    margin-left: 20px;
+}
+.main .rightarea .bottom_btn .price span{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.main .slider .slick-active .price{
+    animation: fadeInL 0.3s 1.2s both;
+}
+
+/* slick button */
+.main .slider .slick-arrow{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.main .slider .slick-prev{
+    z-index: 1;
+    left: -2%;
+    top: 30%;
+    visibility: hidden;
+    transform: scale(2.0);
+}
+.main .slider .slick-prev::after{
+    content: "\f053";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    visibility: visible;
+    color:#fff;
+}
+
+.main .slider .slick-next{
+    z-index: 1;
+    left: auto;right:4%;
+    top: 30%;
+    visibility: hidden;
+    transform: scale(2.0);
+}
+.main .slider .slick-next::after{
+    content: "\f054";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    visibility: visible;
+    color:#fff;
+}
+
+@keyframes fadeInR{
+    0%{transform: translateX(-150%);opacity: 0;}
+    100%{transform: translateX(0%);opacity: 1;}
+}
+@keyframes fadeInL{
+    0%{transform: translateX(150%);opacity: 0;}
+    100%{transform: translateX(0%);opacity: 1;}
+}
+@keyframes fadeInT{
+    0%{transform: translateY(-150%);opacity: 0;}
+    100%{transform: translateY(0%);opacity: 1;}
+}
+@keyframes fadeInB{
+    0%{transform: translateY(150%);opacity: 0;}
+    100%{transform: translateY(0%);opacity: 1;}
+}
